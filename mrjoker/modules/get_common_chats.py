@@ -6,9 +6,9 @@ from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
 
-from Villain import OWNER_ID, dispatcher
-from Villain.modules.helper_funcs.extraction import extract_user
-from Villain.modules.sql.users_sql import get_user_com_chats
+from mrjoker import OWNER_ID, dispatcher
+from mrjoker.modules.helper_funcs.extraction import extract_user
+from mrjoker.modules.sql.users_sql import get_user_com_chats
 
 
 @run_async
