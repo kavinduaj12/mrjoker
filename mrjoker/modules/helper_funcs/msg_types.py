@@ -1,8 +1,7 @@
 from enum import IntEnum, unique
-#made by @AKBORANA1
 from telegram import Message
 
-from Villain.modules.helper_funcs.string_handling import button_markdown_parser
+from mrjoker.modules.helper_funcs.string_handling import button_markdown_parser
 
 
 @unique
