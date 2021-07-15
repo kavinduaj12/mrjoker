@@ -25,25 +25,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from Villain import TIGERS, WOLVES, dispatcher
-from Villain.modules.disable import DisableAbleCommandHandler
-from Villain.modules.helper_funcs.chat_status import (
+from mrjoker import TIGERS, WOLVES, dispatcher
+from mrjoker.modules.disable import DisableAbleCommandHandler
+from mrjoker.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from Villain.modules.helper_funcs.extraction import (
+from mrjoker.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from Villain.modules.helper_funcs.filters import CustomFilters
-from Villain.modules.helper_funcs.misc import split_message
-from Villain.modules.helper_funcs.string_handling import split_quotes
-from Villain.modules.log_channel import loggable
-from Villain.modules.sql import warns_sql as sql
+from mrjoker.modules.helper_funcs.filters import CustomFilters
+from mrjoker.modules.helper_funcs.misc import split_message
+from mrjoker.modules.helper_funcs.string_handling import split_quotes
+from mrjoker.modules.log_channel import loggable
+from mrjoker.modules.sql import warns_sql as sql
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
@@ -498,17 +498,17 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
- 🍃 ✪ /warns <userhandle>*:* get a user's number, and reason, of warns.
- 🍃 ✪ /warnlist*:* list of all current warning filters
+ 🔹 /warns <userhandle>*:* get a user's number, and reason, of warns.
+🔹 /warnlist*:* list of all current warning filters
 
 *Admins only:*
- 🍃 ✪ /warn <userhandle>*:* warn a user. After 3 warns, the user will be banned from the group. Can also be used as a reply.
- 🍃 ✪ /resetwarn <userhandle>*:* reset the warns for a user. Can also be used as a reply.
- 🍃 ✪ /addwarn <keyword> <reply message>*:* set a warning filter on a certain keyword. If you want your keyword to \
+ 🔹 /warn <userhandle>*:* warn a user. After 3 warns, the user will be banned from the group. Can also be used as a reply.
+ 🔹 /resetwarn <userhandle>*:* reset the warns for a user. Can also be used as a reply.
+ 🔹 /addwarn <keyword> <reply message>*:* set a warning filter on a certain keyword. If you want your keyword to \
 be a sentence, encompass it with quotes, as such: `/addwarn "very angry" This is an angry user`. 
- 🍃 ✪ /nowarn <keyword>*:* stop a warning filter
- 🍃 ✪ /warnlimit <num>*:* set the warning limit
- 🍃 ✪ /strongwarn <on/yes/off/no>*:* If set to on, exceeding the warn limit will result in a ban. Else, will just punch.
+ 🔹 /nowarn <keyword>*:* stop a warning filter
+ 🔹 /warnlimit <num>*:* set the warning limit
+ 🔹 /strongwarn <on/yes/off/no>*:* If set to on, exceeding the warn limit will result in a ban. Else, will just punch.
 """
 
 __mod_name__ = "Warnings ❗️"
