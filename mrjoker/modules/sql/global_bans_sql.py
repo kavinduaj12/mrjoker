@@ -1,8 +1,7 @@
 import threading
-#Made by @AKBORANA1
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.sql import BASE, SESSION
 
 
 class GloballyBannedUsers(BASE):
@@ -165,5 +164,3 @@ def migrate_chat(old_chat_id, new_chat_id):
 # Create in memory userid to avoid disk access
 __load_gbanned_userid_list()
 __load_gban_stat_list()
-
-#MADE BY UNKNOWN
