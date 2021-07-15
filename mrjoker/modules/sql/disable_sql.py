@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, distinct, func
 
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.sql import BASE, SESSION
 
 
 class Disable(BASE):
@@ -103,5 +103,3 @@ def __load_disabled_commands():
 
 
 __load_disabled_commands()
-
-#MADE BY UNKNOWN
