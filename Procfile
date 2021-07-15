@@ -1,3 +1,3 @@
-worker: python3 -m Villain
-web: python3 -m Villain
+worker: python3 -m mrjoker
+web: python3 -m mrjoker
 ps:scale worker=1
