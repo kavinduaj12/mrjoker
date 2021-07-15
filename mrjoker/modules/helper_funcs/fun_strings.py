@@ -1,5 +1,3 @@
-# taken from @zoldycktmbot
-#MADE BY @AKBORANA1
 TRUTH = (
     "TU APNA NOSE PAKD SAKTA HAI?",
     "Do you love @AKBORANA1",
