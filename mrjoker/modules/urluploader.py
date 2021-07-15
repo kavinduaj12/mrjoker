@@ -3,7 +3,7 @@ import time
 
 import aiohttp
 
-from Villain.utils.uputils import humanbytes, time_formatter
+from mrjoker.utils.uputils import humanbytes, time_formatter
 
 
 async def download_file(url, file_name, message, start_time, bot):
@@ -90,8 +90,7 @@ ETA: {}""".format(
 
 
 __help__ = """
- • `/up`*:* reply to a direct download link to upload it to telegram as files
- 
-© @kavinduaj"""
+ 🔹 `/up`*:* reply to a direct download link to upload it to telegram as files
+ """
 
 __mod_name__ = "URL Upload 📤"
