@@ -5,8 +5,8 @@ import requests
 from telethon import types
 from telethon.tl import functions
 
-from Villain import telethn
-from Villain.events import register
+from mrjoker import telethn
+from mrjoker.events import register
 
 langi = "en"
 
