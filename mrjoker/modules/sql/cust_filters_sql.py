@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
 
-from Villain.modules.helper_funcs.msg_types import Types
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.helper_funcs.msg_types import Types
+from mrjoker.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
@@ -399,5 +399,3 @@ def migrate_chat(old_chat_id, new_chat_id):
 
 
 __load_chat_filters()
-
-#MADE BY Akborana
