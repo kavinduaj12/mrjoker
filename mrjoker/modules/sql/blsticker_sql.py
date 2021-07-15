@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, Integer, String, UnicodeText, distinct, func
 
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.sql import BASE, SESSION
 
 
 class StickersFilters(BASE):
@@ -195,5 +195,3 @@ def migrate_chat(old_chat_id, new_chat_id):
 
 __load_CHAT_STICKERS()
 __load_chat_stickerset_blacklists()
-
-#MADE BY AKAY
