@@ -10,8 +10,8 @@ from sqlalchemy import (
     func,
 )
 
-from Villain import dispatcher
-from Villain.modules.sql import BASE, SESSION
+from mrjoker import dispatcher
+from mrjoker.modules.sql import BASE, SESSION
 
 
 class Users(BASE):
@@ -232,4 +232,3 @@ def rem_chat(chat_id):
             SESSION.commit()
         else:
             SESSION.close()
-#MADE BY AKAY
