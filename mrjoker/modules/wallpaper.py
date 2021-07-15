@@ -4,8 +4,8 @@ import requests as r
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
-from Villain import SUPPORT_CHAT, WALL_API, dispatcher
-from Villain.modules.disable import DisableAbleCommandHandler
+from mrjoker import SUPPORT_CHAT, WALL_API, dispatcher
+from mrjoker.modules.disable import DisableAbleCommandHandler
 
 
 
