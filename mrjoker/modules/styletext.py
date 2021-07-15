@@ -1,9 +1,9 @@
 from telegram import ParseMode
 from telegram.ext import run_async
 
-from Villain import dispatcher
-from Villain.modules.disable import DisableAbleCommandHandler
-from Villain.modules.helper_funcs.alternate import typing_action
+from mrjoker import dispatcher
+from mrjoker.modules.disable import DisableAbleCommandHandler
+from mrjoker.modules.helper_funcs.alternate import typing_action
 
 normiefont = [
     "a",
