@@ -39,6 +39,8 @@ class Config(object):
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
     YOUTUBE_API_KEY = ""
     WHITELIST_CHATS = "1131653685"
+    TEMP_DOWNLOAD_DIRECTORY = ""
+    
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
