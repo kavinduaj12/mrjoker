@@ -29,14 +29,14 @@ from mrjoker import (
     dispatcher,
     sw,
 )
-from Villain.modules.helper_funcs.chat_status import (
+from mrjoker.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from Villain.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from Villain.modules.helper_funcs.misc import send_to_list
-from Villain.modules.sql.users_sql import get_user_com_chats
+from mrjoker.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from mrjokre.modules.helper_funcs.misc import send_to_list
+from mrjoker.modules.sql.users_sql import get_user_com_chats
 
 GBAN_ENFORCE_GROUP = 6
 
