@@ -2,7 +2,7 @@ import threading
 #made by AKAY
 from sqlalchemy import Column, Integer, String
 
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.sql import BASE, SESSION
 
 
 class Approvals(BASE):
