@@ -2,9 +2,9 @@ import speedtest
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 
-from Villain import DEV_USERS, dispatcher
-from Villain.modules.disable import DisableAbleCommandHandler
-from Villain.modules.helper_funcs.chat_status import dev_plus
+from mrjoker import DEV_USERS, dispatcher
+from mrjoker.modules.disable import DisableAbleCommandHandler
+from mrjoker.modules.helper_funcs.chat_status import dev_plus
 
 
 def convert(speed):
