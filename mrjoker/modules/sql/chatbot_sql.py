@@ -1,8 +1,7 @@
 import threading
-#MADE BY AKAY
 from sqlalchemy import Column, String
 
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.sql import BASE, SESSION
 
 
 class ChatbotChats(BASE):
