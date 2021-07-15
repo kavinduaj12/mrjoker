@@ -3,7 +3,7 @@ from functools import wraps
 
 from telegram.ext import CallbackContext
 
-from Villain.modules.helper_funcs.misc import is_module_loaded
+from mrjoker.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -195,9 +195,9 @@ if is_module_loaded(FILENAME):
     __help__ = """
 *Admins only:*
 
-🍃 ✪ /logchannel*:* get log channel info
-🍃 ✪ /setlog*:* set the log channel.
-🍃 ✪ /unsetlog*:* unset the log channel.
+🔹 /logchannel*:* get log channel info
+🔹 /setlog*:* set the log channel.
+🔹 /unsetlog*:* unset the log channel.
 
 *Setting the log channel is done by:*
 
