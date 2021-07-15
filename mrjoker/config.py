@@ -38,6 +38,7 @@ class Config(object):
     SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
     YOUTUBE_API_KEY = ""
+    WHITELIST_CHATS = "1131653685"
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
