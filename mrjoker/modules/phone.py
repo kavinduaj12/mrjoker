@@ -3,9 +3,9 @@ import json
 import requests
 from telegram.ext import CommandHandler, run_async
 
-from Villain import dispatcher
-from Villain.modules.helper_funcs.alternate import send_message
-from Villain.modules.helper_funcs.chat_status import user_admin
+from mrjoker import dispatcher
+from mrjoker.modules.helper_funcs.alternate import send_message
+from mrjoker.modules.helper_funcs.chat_status import user_admin
 
 
 @run_async
