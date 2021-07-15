@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText
 
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.sql import BASE, SESSION
 
 
 class BlacklistUsers(BASE):
@@ -67,4 +67,3 @@ def __load_blacklist_userid_list():
 
 
 __load_blacklist_userid_list()
-#MADE BY @AKBORANA1
