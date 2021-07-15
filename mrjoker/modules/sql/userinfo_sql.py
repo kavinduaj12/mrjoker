@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, Integer, UnicodeText
 
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.sql import BASE, SESSION
 
 
 class UserInfo(BASE):
@@ -74,4 +74,3 @@ def set_user_bio(user_id, bio):
 
         SESSION.add(userbio)
         SESSION.commit()
-#MADE BY AKAY
