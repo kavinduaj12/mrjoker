@@ -3,7 +3,7 @@ import threading
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
 from sqlalchemy.dialects import postgresql
 
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.sql import BASE, SESSION
 
 
 class Warns(BASE):
@@ -313,4 +313,3 @@ def migrate_chat(old_chat_id, new_chat_id):
 
 
 __load_chat_warn_filters()
-#MADE BY ⚡ AKAY
