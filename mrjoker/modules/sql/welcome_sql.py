@@ -4,8 +4,8 @@ from typing import Union
 
 from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
 
-from Villain.modules.helper_funcs.msg_types import Types
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.helper_funcs.msg_types import Types
+from mrjoker.modules.sql import BASE, SESSION
 
 DEFAULT_WELCOME = "Hey {first}, how are you?"
 DEFAULT_GOODBYE = "Nice knowing ya!"
@@ -618,5 +618,3 @@ def migrate_chat(old_chat_id, new_chat_id):
                 btn.chat_id = str(new_chat_id)
 
         SESSION.commit()
-
-#made by AKAY
