@@ -1,15 +1,13 @@
-# Written by AYUSH for Villain
-
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CallbackQueryHandler, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from Villain import dispatcher
-from Villain.modules.disable import DisableAbleCommandHandler
-from Villain.modules.helper_funcs.alternate import typing_action
-from Villain.modules.helper_funcs.chat_status import bot_admin, user_admin
-from Villain.modules.helper_funcs.extraction import extract_user_and_text
+from mrjoker import dispatcher
+from mrjoker.modules.disable import DisableAbleCommandHandler
+from mrjoker.modules.helper_funcs.alternate import typing_action
+from mrjoker.modules.helper_funcs.chat_status import bot_admin, user_admin
+from mrjoker.modules.helper_funcs.extraction import extract_user_and_text
 
 
 @run_async
@@ -261,14 +259,14 @@ __mod_name__ = "Tagger 🖇"
 __help__ = """ 
 Tagger is an essential feature to mention all subscribed members in the group. Any chat members can subscribe to tagger.
 
-- /tagme: registers to the chat tag list.
-- /untagme: unsubscribes from the chat tag list.
+🔹 - /tagme: registers to the chat tag list.
+🔹 - /untagme: unsubscribes from the chat tag list.
 
 *Admin only:*
-- /tagall: mention all subscribed members.
-- /untagall: clears all subscribed members. 
-- /addtag <userhandle>: add a user to chat tag list. (via handle, or reply)
-- /removetag <userhandle>: remove a user to chat tag list. (via handle, or reply)
+🔹 - /tagall: mention all subscribed members.
+🔹 - /untagall: clears all subscribed members. 
+🔹 - /addtag <userhandle>: add a user to chat tag list. (via handle, or reply)
+🔹 - /removetag <userhandle>: remove a user to chat tag list. (via handle, or reply)
 """
 
 TAG_ALL_HANDLER = DisableAbleCommandHandler("tagall", tagall, filters=Filters.group)
@@ -293,5 +291,3 @@ dispatcher.add_handler(TAG_ME_HANDLER)
 dispatcher.add_handler(ADD_TAG_HANDLER)
 dispatcher.add_handler(REMOVE_TAG_HANDLER)
 dispatcher.add_handler(TAGALL_CALLBACK_HANDLER)
-
-#AYUSH CODE CREDIT DEVIL
