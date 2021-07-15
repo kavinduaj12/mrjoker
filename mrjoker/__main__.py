@@ -46,7 +46,6 @@ from mrjoker import (
     TOKEN,
     URL,
     WEBHOOK,
-    WHITELIST_CHATS,
     StartTime,
     dispatcher,
     pbot,
