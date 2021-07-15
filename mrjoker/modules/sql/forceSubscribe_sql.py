@@ -1,7 +1,7 @@
 
 from sqlalchemy import Column, Numeric, String
 
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):
