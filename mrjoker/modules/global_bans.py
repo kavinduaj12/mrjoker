@@ -35,7 +35,7 @@ from mrjoker.modules.helper_funcs.chat_status import (
     user_admin,
 )
 from mrjoker.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from mrjokre.modules.helper_funcs.misc import send_to_list
+from mrjoker.modules.helper_funcs.misc import send_to_list
 from mrjoker.modules.sql.users_sql import get_user_com_chats
 
 GBAN_ENFORCE_GROUP = 6
