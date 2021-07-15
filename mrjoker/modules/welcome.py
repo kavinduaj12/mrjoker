@@ -22,8 +22,8 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
-import Villain.modules.sql.welcome_sql as sql
-from Villain import (
+import mrjoker.modules.sql.welcome_sql as sql
+from mrjoker import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -35,15 +35,15 @@ from Villain import (
     dispatcher,
     sw,
 )
-from Villain.modules.helper_funcs.chat_status import is_user_ban_protected, user_admin
-from Villain.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from Villain.modules.helper_funcs.msg_types import get_welcome_type
-from Villain.modules.helper_funcs.string_handling import (
+from mrjoker.modules.helper_funcs.chat_status import is_user_ban_protected, user_admin
+from mrjoker.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from mrjoker.modules.helper_funcs.msg_types import get_welcome_type
+from mrjoker.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from Villain.modules.log_channel import loggable
-from Villain.modules.sql.global_bans_sql import is_user_gbanned
+from mrjoker.modules.log_channel import loggable
+from mrjoker.modules.sql.global_bans_sql import is_user_gbanned
 
 VALID_WELCOME_FORMATTERS = [
     "first",
@@ -1062,22 +1062,22 @@ def __chat_settings__(chat_id, user_id):
 __help__ = """
 *Admins only:*
 
- 🍃 ✪ /welcome <on/off>*:* enable/disable welcome messages.
- 🍃 ✪ /welcome*:* shows current welcome settings.
- 🍃 ✪ /welcome noformat*:* shows current welcome settings, without the formatting - useful to recycle your welcome messages!
- 🍃 ✪ /goodbye*:* same usage and args as `/welcome`.
- 🍃 ✪ /setwelcome <sometext>*:* set a custom welcome message. If used replying to media, uses that media.
- 🍃 ✪ /setgoodbye <sometext>*:* set a custom goodbye message. If used replying to media, uses that media.
- 🍃 ✪ /resetwelcome*:* reset to the default welcome message.
- 🍃 ✪ /resetgoodbye*:* reset to the default goodbye message.
- 🍃 ✪ /cleanwelcome <on/off>*:* On new member, try to delete the previous welcome message to avoid spamming the chat.
- 🍃 ✪ /welcomemutehelp*:* gives information about welcome mutes.
- 🍃 ✪ /cleanservice <on/off*:* deletes telegrams welcome/left service messages. 
+🔹 /welcome <on/off>*:* enable/disable welcome messages.
+🔹 /welcome*:* shows current welcome settings.
+🔹 /welcome noformat*:* shows current welcome settings, without the formatting - useful to recycle your welcome messages!
+🔹 /goodbye*:* same usage and args as `/welcome`.
+🔹 /setwelcome <sometext>*:* set a custom welcome message. If used replying to media, uses that media.
+🔹 /setgoodbye <sometext>*:* set a custom goodbye message. If used replying to media, uses that media.
+🔹 /resetwelcome*:* reset to the default welcome message.
+🔹 /resetgoodbye*:* reset to the default goodbye message.
+🔹 /cleanwelcome <on/off>*:* On new member, try to delete the previous welcome message to avoid spamming the chat.
+🔹 /welcomemutehelp*:* gives information about welcome mutes.
+🔹 /cleanservice <on/off*:* deletes telegrams welcome/left service messages. 
  *Example:*
 user joined chat, user left chat.
 
 *Welcome markdown:* 
- 🍃 ✪ `/welcomehelp`*:* view more formatting information for custom welcome/goodbye messages.
+🔹 `/welcomehelp`*:* view more formatting information for custom welcome/goodbye messages.
 """
 
 NEW_MEM_HANDLER = MessageHandler(Filters.status_update.new_chat_members, new_member)
@@ -1130,5 +1130,3 @@ __handlers__ = [
     BUTTON_VERIFY_HANDLER,
     WELCOME_MUTE_HELP,
 ]
-
-#AKAY TEAM
