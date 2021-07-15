@@ -16,7 +16,7 @@ class Config(object):
 
     API_ID = 123456  # integer value, dont use ""
     API_HASH = "xyz"
-    TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    TOKEN = ""  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 948247711  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "kavinduaj"
     SUPPORT_CHAT = "lkhitech"  # Your own group for support, do not add the @
@@ -28,7 +28,7 @@ class Config(object):
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = ""  # needed for any database modules
     REDIS_URI = " "
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
