@@ -5,8 +5,8 @@ from pyrogram import filters
 from pytube import YouTube
 from youtubesearchpython import VideosSearch
 
-from Villain import LOGGER, pbot
-from Villain.utils.ut import get_arg
+from mrjoker import LOGGER, pbot
+from mrjoker.utils.ut import get_arg
 
 
 def yt_search(song):
@@ -79,9 +79,9 @@ __help__ = """
  *You can either enter just the song name or both the artist and song
   name. *
 
- 🍃 ✪ /song <songname artist(optional)>*:* uploads the song in it's best quality available
- 🍃 ✪ /video <songname artist(optional)>*:* uploads the video song in it's best quality available
- 🍃 ✪ /lyrics <song>*:* returns the lyrics of that song.
+🔹 /song <songname artist(optional)>*:* uploads the song in it's best quality available
+🔹 /video <songname artist(optional)>*:* uploads the video song in it's best quality available
+🔹 /lyrics <song>*:* returns the lyrics of that song.
 
 """
 
