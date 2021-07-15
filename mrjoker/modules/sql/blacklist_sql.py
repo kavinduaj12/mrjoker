@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, Integer, String, UnicodeText, distinct, func
 
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.sql import BASE, SESSION
 
 
 class BlackListFilters(BASE):
@@ -195,4 +195,3 @@ def migrate_chat(old_chat_id, new_chat_id):
 
 __load_chat_blacklists()
 __load_chat_settings_blacklists()
-#MADE BY @AKBORANA1
