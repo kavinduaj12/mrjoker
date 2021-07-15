@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, Integer, String, UnicodeText
 
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.sql import BASE, SESSION
 
 DEF_COUNT = 1
 DEF_LIMIT = 0
