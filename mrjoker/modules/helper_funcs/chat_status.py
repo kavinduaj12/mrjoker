@@ -389,6 +389,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from Villain.modules import connection
+from mrjoker.modules import connection
 
 connected = connection.connected
