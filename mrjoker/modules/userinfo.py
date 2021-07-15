@@ -25,14 +25,14 @@ from mrjoker import (
     dispatcher,
     sw,
 )
-from Villain import telethn as SaitamaTelethonClient
-from Villain.__main__ import STATS, TOKEN, USER_INFO
-from Villain.modules.disable import DisableAbleCommandHandler
-from Villain.modules.helper_funcs.chat_status import sudo_plus
-from Villain.modules.helper_funcs.extraction import extract_user
-from Villain.modules.sql.afk_sql import check_afk_status, is_afk
-from Villain.modules.sql.global_bans_sql import is_user_gbanned
-from Villain.modules.sql.users_sql import get_user_num_chats
+from mrjoker import telethn as SaitamaTelethonClient
+from mrjoker.__main__ import STATS, TOKEN, USER_INFO
+from mrjoker.modules.disable import DisableAbleCommandHandler
+from mrjoker.modules.helper_funcs.chat_status import sudo_plus
+from mrjoker.modules.helper_funcs.extraction import extract_user
+from mrjoker.modules.sql.afk_sql import check_afk_status, is_afk
+from mrjoker.modules.sql.global_bans_sql import is_user_gbanned
+from mrjoker.modules.sql.users_sql import get_user_num_chats
 
 
 def no_by_per(totalhp, percentage):
