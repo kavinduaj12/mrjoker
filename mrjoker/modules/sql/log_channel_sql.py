@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, distinct, func
 
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.sql import BASE, SESSION
 
 
 class GroupLogs(BASE):
@@ -81,4 +81,3 @@ def __load_log_channels():
 
 
 __load_log_channels()
-#MADE BY AKAY
