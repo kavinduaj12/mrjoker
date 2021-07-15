@@ -3,8 +3,8 @@ from googletrans import LANGUAGES, Translator
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from Villain import dispatcher
-from Villain.modules.disable import DisableAbleCommandHandler
+from mrjoker import dispatcher
+from mrjoker.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
