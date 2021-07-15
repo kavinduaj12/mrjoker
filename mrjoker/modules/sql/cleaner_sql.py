@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Boolean, Column, UnicodeText
 
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.sql import BASE, SESSION
 
 
 class CleanerBlueTextChatSettings(BASE):
@@ -202,4 +202,3 @@ def __load_cleaner_list():
 
 __load_cleaner_list()
 
-#MADE BY UNKNOWN
