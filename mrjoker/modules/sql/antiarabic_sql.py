@@ -4,7 +4,7 @@ from typing import Union
 
 from sqlalchemy import Boolean, Column, String
 
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.sql import BASE, SESSION
 
 
 class AntiArabicChatSettings(BASE):
