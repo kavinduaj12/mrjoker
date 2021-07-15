@@ -5,9 +5,9 @@ import zipfile
 from telethon import types
 from telethon.tl import functions
 
-from Villain import TEMP_DOWNLOAD_DIRECTORY
-from Villain import telethn as client
-from Villain.events import register
+from mrjoker import TEMP_DOWNLOAD_DIRECTORY
+from mrjoker import telethn as client
+from mrjoker.events import register
 
 
 async def is_register_admin(chat, user):
@@ -210,8 +210,8 @@ def get_lst_of_files(input_directory, output_lst):
 
 
 __help__ = """
- 🍃 ✪ /zip: reply to a telegram file to compress it in .zip format
- 🍃 ✪ /unzip: reply to a telegram file to decompress it from the .zip format
+🔹 /zip: reply to a telegram file to compress it in .zip format
+🔹 /unzip: reply to a telegram file to decompress it from the .zip format
 """
 
 __mod_name__ = "Zipper 🗂"
