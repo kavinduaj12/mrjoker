@@ -12,10 +12,10 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from Villain import DRAGONS, LOGGER, TIGERS, WOLVES, dispatcher
-from Villain.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from Villain.modules.log_channel import loggable
-from Villain.modules.sql import reporting_sql as sql
+from mrjoker import DRAGONS, LOGGER, TIGERS, WOLVES, dispatcher
+from mrjoker.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from mrjoker.modules.log_channel import loggable
+from mrjoker.modules.sql import reporting_sql as sql
 
 REPORT_GROUP = 12
 REPORT_IMMUNE_USERS = DRAGONS + TIGERS + WOLVES
@@ -266,13 +266,13 @@ def buttons(update: Update, context: CallbackContext):
 
 __help__ = """
 
-🍃 ✪ /report <reason>*:* reply to a message to report it to admins.
-🍃 ✪ `@admin`*:* reply to a message to report it to admins.
+ 🔹 /report <reason>*:* reply to a message to report it to admins.
+ 🔹 `@admin`*:* reply to a message to report it to admins.
 *NOTE:* Neither of these will get triggered if used by admins.
 
 *Admins only:*
 
- 🍃 ✪ /reports <on/off>*:* change report setting, or view current status.
+ 🔹 /reports <on/off>*:* change report setting, or view current status.
    • If done in pm, toggles your status.
    • If in group, toggles that groups's status.
 """
