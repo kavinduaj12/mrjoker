@@ -2,7 +2,7 @@ from telegram.ext import run_async
 
 from mrjoker import dispatcher
 from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoke.modules.helper_funcs.alternate import send_message
+from mrjoker.modules.helper_funcs.alternate import send_message
 from mrjoker.modules.helper_funcs.chat_status import user_admin
 
 
