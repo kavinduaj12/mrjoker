@@ -6,9 +6,9 @@ from telethon import *
 from telethon.tl import functions, types
 from telethon.tl.types import *
 
-from Villain import *
-from Villain import telethn
-from Villain.events import register
+from mrjoker import *
+from mrjoker import telethn
+from mrjoker.events import register
 
 
 async def is_register_admin(chat, user):
