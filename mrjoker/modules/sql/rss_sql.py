@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, Integer, UnicodeText
 
-from Villain.modules.sql import BASE, SESSION
+from mrjoker.modules.sql import BASE, SESSION
 
 
 class RSS(BASE):
@@ -79,5 +79,3 @@ def update_url(row_id, new_entry_links):
 
         # commit the changes to the DB
         SESSION.commit()
-
-#Made by Akay
